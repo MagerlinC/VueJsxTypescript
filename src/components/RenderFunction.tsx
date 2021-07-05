@@ -1,5 +1,5 @@
 import { defineComponent, ref, PropType } from "vue";
-import Piece from "@/types/Piece";
+import { Piece } from "../types/Piece";
 
 const randomIntFromInterval = (min: number, max: number) => {
   // min and max included
@@ -14,7 +14,7 @@ export default defineComponent({
     },
   },
   setup(props) {
-    const selectedPiece: Piece = ref(null);
+    const selectedPiece: any = ref(null);
     const spinTheWheel = () => {
       const rndInt: number = randomIntFromInterval(0, props.pieces.length);
       selectedPiece.value = props.pieces[rndInt];

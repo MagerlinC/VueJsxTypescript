@@ -7,8 +7,8 @@
 
 <script lang="ts">
 import { defineComponent, ref } from "vue";
-import Piece from "../types/Piece";
-import RenderFunction from "./RenderFunction.tsx";
+import { Piece } from "../types/Piece";
+import RenderFunction from "./RenderFunction";
 
 export default defineComponent({
   name: "App",

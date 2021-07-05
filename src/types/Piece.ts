@@ -1,4 +1,4 @@
-interface Piece {
+export interface Piece {
   name: string;
   value: number;
 }
